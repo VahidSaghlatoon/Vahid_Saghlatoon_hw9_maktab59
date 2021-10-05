@@ -1,9 +1,5 @@
 package com.vahidsaghlatoon;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -60,7 +56,7 @@ public class HashMapQ {
         }
 
         public static int numOfArrangements(String str){
-            java.util.HashMap<Character, Integer> hm = new java.util.HashMap();
+            HashMap<Character, Integer> hm = new HashMap<>();
 
             for(char key : str.toCharArray()){
                 if(hm.containsKey(key)) hm.put(key, hm.get(key) + 1);
