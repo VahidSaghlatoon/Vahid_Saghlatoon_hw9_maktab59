@@ -59,7 +59,8 @@ public class HashMapQ {
             HashMap<Character, Integer> hm = new HashMap<>();
 
             for(char key : str.toCharArray()){
-                if(hm.containsKey(key)) hm.put(key, hm.get(key) + 1);
+                if(hm.containsKey(key))
+                    hm.put(key, hm.get(key) + 1);
                 else hm.put(key, 1);
             }
 
